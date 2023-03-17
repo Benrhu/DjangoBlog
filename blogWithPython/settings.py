@@ -28,7 +28,9 @@ SECRET_KEY = 'jz1+e$fgh%7%ktyj8r_x-^t1z1&vt**9hagh784c8(&@nw137a'
 DEBUG = True
 
 ALLOWED_HOSTS = [
-    'localhost'
+    'localhost',
+    'grouzy.com',
+    '0.0.0.0:8000'
 ]
 
 
