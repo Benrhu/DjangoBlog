@@ -1,0 +1,15 @@
+{% extends 'blog/base.html' %} {% load static %}
+{% block content %}
+<div>
+  <h1 class="pb-64 text-center title">Our posts</h1>
+</div>
+
+{% for post in post_list %}
+<div class="text-center pb-64">
+    <img src="{{ post.image.url }}">
+    <h2 class="title">{{ post.title }}</h2>
+    <p class="text pb-10">{{ post.intro }}</p>
+    <a class="hover:bg-blue-600" href="{% url 'post_detail' post.slug %}">Leer más</a>
+</div>
+{% endfor%}
+{% endblock %}

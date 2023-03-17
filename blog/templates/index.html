@@ -1,0 +1,443 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>Grouzy</title>
+    <meta content="" name="description" />
+    <meta content="" name="keywords" />
+    <link
+      rel="shortcut icon"
+      href="{% static '/images/favicon-grouzy.png' %}"
+      type="image/png"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <!-- JS Files -->
+    <script src="{% static '/css/bootstrap/js/bootstrap.bundle.min.js' %}"></script>
+    <script src="{% static '/css/aos/aos.js' %}"></script>
+    <script src="{% static  '/css/glightbox/js/glightbox.min.js' %}"></script>
+    <script src="{% static  '/css/isotope-layout/isotope.pkgd.min.js' %}"></script>
+    <script src="{% static  '/css/swiper/swiper-bundle.min.js' %}"></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Source+Sans+Pro:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400;1,600;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="{% static '/css/bootstrap/css/bootstrap.min.css' %}"
+      rel="stylesheet"
+    />
+    <link
+      href="{% static '/css/bootstrap-icons/bootstrap-icons.css' %}"
+      rel="stylesheet"
+    />
+    <link href="{% static '/css/aos/aos.css' %}" rel="stylesheet" />
+    <link
+      href="{% static '/css/glightbox/css/glightbox.min.css' %}"
+      rel="stylesheet"
+    />
+    <link
+      href="{% static '/css/swiper/swiper-bundle.min.css' %}"
+      rel="stylesheet"
+    />
+    <link href="{% static '/css/variables.css' %}" rel="stylesheet" />
+    <link href="{% static '/css/main.css' %}" rel="stylesheet" />
+    <link rel="stylesheet" href="{% static '/scss/style.css' %}" />
+  </head>
+
+  <body>
+    <header id="header" class="header fixed-top" data-scrollto-offset="0">
+      <div
+      class="container-fluid d-flex align-items-center justify-content-between"
+    >
+      <a
+        href="index.html"
+        class="logo d-flex align-items-center scrollto me-auto me-lg-0"
+      >
+      </a>
+        <nav id="navbar text-center" class="navbar">
+          <ul>
+            <li>
+              <a class="nav-link scrollto" href="{% url 'home' %}">Home</a>
+            </li>
+            <li>
+              <a class="nav-link scrollto" href="{% url 'jobs' %}">Jobs</a>
+            </li>
+            <li>
+              <a class="nav-link scrollto" href="{% url 'contact' %}">Contact</a>
+            </li>
+          </ul>
+          <i class="bi bi-list mobile-nav-toggle d-none"></i>
+        </nav>
+        <a class="scrollto" href="index.html#about"></a>
+      </div>
+    </header>
+    <section id="hero-animated" class="hero-animated d-flex align-items-center">
+      <div
+        class="container d-flex flex-column justify-content-center align-items-center text-center position-relative"
+        data-aos="zoom-out"
+      >
+        <img
+          src="{% static '/images/hero-carousel/Grouzy_logo.png' %}"
+          class="img-fluid animated"
+        />
+        <p>We love taking care of people, creating solutions</p>
+      </div>
+    </section>
+    <main id="main">
+      <section id="featured-services" class="featured-services">
+        <div class="container">
+          <div class="row gy-4">
+            <div class="col-xl-3 col-md-6 d-flex" data-aos="zoom-out">
+              <div class="service-item position-relative">
+                <div class="icon"><i class="bi bi-activity icon"></i></div>
+                <h4>Signals</h4>
+                <p>We are constantly listening to market signals</p>
+              </div>
+            </div>
+            <div
+              class="col-xl-3 col-md-6 d-flex"
+              data-aos="zoom-out"
+              data-aos-delay="200"
+            >
+              <div class="service-item position-relative">
+                <div class="icon"><i class="bi bi-people-fill"></i></div>
+                <h4>Talent</h4>
+                <p>Our team is awesome</p>
+              </div>
+            </div>
+            <div
+              class="col-xl-3 col-md-6 d-flex"
+              data-aos="zoom-out"
+              data-aos-delay="400"
+            >
+              <div class="service-item position-relative">
+                <div class="icon"><i class="bi bi-terminal-fill"></i></div>
+                <h4>Code</h4>
+                <p>
+                  We are passionate with cuting-edge technologies and coding
+                </p>
+              </div>
+            </div>
+            <div
+              class="col-xl-3 col-md-6 d-flex"
+              data-aos="zoom-out"
+              data-aos-delay="600"
+            >
+              <div class="service-item position-relative">
+                <div class="icon"><i class="bi bi-laptop"></i></div>
+                <h4>Remote</h4>
+                <p>We are totally remote</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="features" class="features">
+        <div class="container" data-aos="fade-up">
+          <ul class="nav nav-tabs row gy-4 d-flex">
+            <li class="nav-item col-6 col-md-4 col-lg-2">
+              <a
+                class="nav-link active show"
+                data-bs-toggle="tab"
+                data-bs-target="#tab-1"
+              >
+                <i class="bi bi-binoculars color-cyan"></i>
+                <h4>Ways</h4>
+              </a>
+            </li>
+            <!-- End Tab 1 Nav -->
+
+            <li class="nav-item col-6 col-md-4 col-lg-2">
+              <a class="nav-link" data-bs-toggle="tab" data-bs-target="#tab-2">
+                <i class="bi bi-person-fill color-teal"></i>
+                <h4>UX</h4>
+              </a>
+            </li>
+            <li class="nav-item col-6 col-md-4 col-lg-2">
+              <a class="nav-link" data-bs-toggle="tab" data-bs-target="#tab-3">
+                <i class="bi bi-stars color-orange"></i>
+                <h4>Polar star</h4>
+              </a>
+            </li>
+            <!-- End Tab 3 Nav -->
+
+            <li class="nav-item col-6 col-md-4 col-lg-2">
+              <a class="nav-link" data-bs-toggle="tab" data-bs-target="#tab-4">
+                <i class="bi bi-bounding-box-circles color-blue"></i>
+                <h4>Blockchain</h4>
+              </a>
+            </li>
+            <!-- End Tab 4 Nav -->
+
+            <li class="nav-item col-6 col-md-4 col-lg-2">
+              <a class="nav-link" data-bs-toggle="tab" data-bs-target="#tab-5">
+                <i class="bi bi-easel color-blue"></i>
+                <h4 class="text-center">Artificial intelligence</h4>
+              </a>
+            </li>
+          </ul>
+
+          <div class="tab-content">
+            <div class="tab-pane active show" id="tab-1">
+              <div class="row gy-4">
+                <div
+                  class="col-lg-8 order-2 order-lg-1"
+                  data-aos="fade-up"
+                  data-aos-delay="100"
+                >
+                  <h3>Ways</h3>
+                  <p class="fst-italic">
+                    We are constantly looking for differents ways to solve a
+                    problem
+                  </p>
+                  <ul>
+                    <li>
+                      <i class="bi bi-check-circle-fill"></i> Looking for new
+                      technologies
+                    </li>
+                    <li>
+                      <i class="bi bi-check-circle-fill"></i> Working with
+                      blockchain and artificial intelligence
+                    </li>
+                    <li>
+                      <i class="bi bi-check-circle-fill"></i> Always looking for
+                      ways to make people's lives easier
+                    </li>
+                  </ul>
+                </div>
+                <div
+                  class="col-lg-4 order-1 order-lg-2 text-center"
+                  data-aos="fade-up"
+                  data-aos-delay="200"
+                >
+                  <img
+                    src="{% static '/images/features-1.svg' %}"
+                    alt=""
+                    class="img-fluid"
+                  />
+                </div>
+              </div>
+            </div>
+            <!-- End Tab Content 1 -->
+
+            <div class="tab-pane" id="tab-2">
+              <div class="row gy-4">
+                <div class="col-lg-8 order-2 order-lg-1">
+                  <h3>User experience (UX)</h3>
+                  <p>
+                    We are obsessed with our customers' experience. We recognize
+                    that, we go out of our way for them.
+                  </p>
+                  <ul>
+                    <li>
+                      <i class="bi bi-check-circle-fill"></i> The experience of
+                      using the technology must be pleasant.
+                    </li>
+                    <li>
+                      <i class="bi bi-check-circle-fill"></i> Keep it simple and
+                      cool
+                    </li>
+                    <li>
+                      <i class="bi bi-check-circle-fill"></i> Always looking for
+                      ways to make people's lives easier
+                    </li>
+                  </ul>
+                </div>
+                <div class="col-lg-4 order-1 order-lg-2 text-center">
+                  <img
+                    src="{% static '/images/features-2.svg' %}"
+                    alt=""
+                    class="img-fluid"
+                  />
+                </div>
+              </div>
+            </div>
+            <!-- End Tab Content 2 -->
+
+            <div class="tab-pane" id="tab-3">
+              <div class="row gy-4">
+                <div class="col-lg-8 order-2 order-lg-1">
+                  <h3>Our polar star</h3>
+                  <p>
+                    Our pole star is innovation. It drives us crazy to test the
+                    latest technologies and develop solutions that no one has
+                    yet thought of or launched. We walk hand in hand with
+                    technological evolution.
+                  </p>
+                  <ul>
+                    <li>
+                      <i class="bi bi-check-circle-fill"></i> Focus on
+                      delivering the potential of technology to everyone
+                    </li>
+                  </ul>
+                </div>
+                <div class="col-lg-4 order-1 order-lg-2 text-center">
+                  <img
+                    src="{% static '/images/features-3.svg' %}"
+                    alt=""
+                    class="img-fluid"
+                  />
+                </div>
+              </div>
+            </div>
+
+            <div class="tab-pane" id="tab-4">
+              <div class="row gy-4">
+                <div class="col-lg-8 order-2 order-lg-1">
+                  <h3>Blockchain</h3>
+                  <p>
+                    Blockchain is revolutionizing the business experience by
+                    providing greater transparency and security in transactions,
+                    while reducing costs and wait times by eliminating
+                    intermediaries.
+                  </p>
+                  <p>
+                    In addition, it enables the automation of business processes
+                    through smart contracts, which increases efficiency and
+                    reduces the possibility of human error. In short, blockchain
+                    offers an innovative and efficient alternative to
+                    traditional methods of recording and transacting business.
+                  </p>
+                  <ul>
+                    <li>
+                      <i class="bi bi-check-circle-fill"></i> Blockchain
+                      increases the transparency and security of commercial
+                      transactions.
+                    </li>
+                    <li>
+                      <i class="bi bi-check-circle-fill"></i> Blockchain
+                      technology reduces costs and lead times by eliminating
+                      unnecessary intermediaries.
+                    </li>
+                    <li>
+                      <i class="bi bi-check-circle-fill"></i> Smart contracts
+                      enable the automation of business processes and reduce the
+                      possibility of human error.
+                    </li>
+                  </ul>
+                </div>
+                <div class="col-lg-4 order-1 order-lg-2 text-center">
+                  <img
+                    src="{% static '/images/features-4.svg' %}"
+                    alt=""
+                    class="img-fluid"
+                  />
+                </div>
+              </div>
+            </div>
+            <!-- End Tab Content 4 -->
+
+            <div class="tab-pane" id="tab-5">
+              <div class="row gy-4">
+                <div class="col-lg-8 order-2 order-lg-1">
+                  <h3>Artificial intelligence</h3>
+                  <p>
+                    Artificial intelligence is transforming the business
+                    landscape by providing companies with the ability to analyze
+                    vast amounts of data and make informed decisions faster than
+                    ever before.
+                  </p>
+                  <p>
+                    In addition, AI can automate repetitive and time-consuming
+                    tasks, freeing up employees to focus on more creative and
+                    strategic work. Finally, AI-powered chatbots and customer
+                    service tools can improve customer experiences and increase
+                    customer satisfaction.
+                  </p>
+                  <ul>
+                    <li>
+                      <i class="bi bi-check-circle-fill"></i> Artificial
+                      intelligence enables businesses to analyze large amounts
+                      of data and make informed decisions faster.
+                    </li>
+                    <li>
+                      <i class="bi bi-check-circle-fill"></i> AI automates
+                      repetitive and time-consuming tasks, freeing up employees
+                      for more creative and strategic work.
+                    </li>
+                    <li>
+                      <i class="bi bi-check-circle-fill"></i> AI-powered
+                      chatbots and customer service tools can improve customer
+                      experiences and increase satisfaction.
+                    </li>
+                  </ul>
+                </div>
+                <div class="col-lg-4 order-1 order-lg-2 text-center">
+                  <img
+                    src="{% static '/images/features-5.svg' %}"
+                    alt=""
+                    class="img-fluid"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-content">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-3 col-md-6">
+              <div class="footer-info">
+                <h3>Grouzy</h3>
+                <p>
+                  Barcelona, España <br />
+                  <br /><br />
+                  <strong>Email:</strong> info@grouzy.com<br />
+                </p>
+              </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 footer-newsletter">
+              <h4>Our Newsletter</h4>
+              <form action="" method="post">
+                <input type="email" name="email" /><input
+                  type="submit"
+                  value="Subscribe"
+                />
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-legal text-center">
+        <div
+          class="container d-flex flex-column flex-lg-row justify-content-center justify-content-lg-between align-items-center"
+        >
+          <div
+            class="d-flex flex-column align-items-center align-items-lg-center"
+          >
+            <div class="copyright">
+              <p>
+                &copy; Copyright <strong><span>Grouzy</span></strong
+                >. All Rights Reserved
+              </p>
+            </div>
+          </div>
+
+          <!-- <div class="social-links order-first order-lg-last mb-3 mb-lg-0">
+            <a href="#" class="twitter"><i class="bi bi-twitter"></i></a>
+            <a href="#" class="facebook"><i class="bi bi-facebook"></i></a>
+            <a href="#" class="instagram"><i class="bi bi-instagram"></i></a>
+            <a href="#" class="google-plus"><i class="bi bi-skype"></i></a>
+            <a href="#" class="linkedin"><i class="bi bi-linkedin"></i></a>
+          </div> -->
+        </div>
+      </div>
+    </footer>
+    <a
+      href="#"
+      class="scroll-top d-flex align-items-center justify-content-center"
+      ><i class="bi bi-arrow-up-short"></i
+    ></a>
+    <script src="{% static '/js/main.js' %}"></script>
+  </body>
+</html>

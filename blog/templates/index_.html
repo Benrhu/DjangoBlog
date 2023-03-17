@@ -1,0 +1,489 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+  <script src="{% static '/js/tawkTo.js' %}"></script>
+  <script src="{% static '/js/mailerLite.js' %}"></script>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge" />
+    <meta name="description" content="" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <title>
+      Grouzy | Ayudamos a pequeños negocios a generar más beneficio con menos
+      coste
+    </title>
+    <link
+      rel="shortcut icon"
+      href="{% static '/images/favicon-grouzy.png' %}"
+      type="image/png"
+    />
+    <link rel="stylesheet" href="{% static '/css/slick.css' %}" />
+    <link rel="stylesheet" href="{% static '/css/LineIcons.css' %}" />
+    <link rel="stylesheet" href="{% static '/css/magnific-popup.css' %}" />
+    <link rel="stylesheet" href="{% static '/css/tailwind.css' %}" />
+    <link rel="stylesheet" href="{% static '/css/styles.css' %}">
+  </head>
+
+  <body>
+    <header class="header-area">
+      <div class="navigation">
+        <div class="container">
+          <div class="row">
+            <div class="w-full">
+              <nav
+                class="flex items-center justify-between navbar navbar-expand-md"
+              >
+                <a class="mr-4 navbar-brand" href="{% url 'home' %}">
+                  <img
+                    src="{% static '/images/Grouzy_logo.png' %}"
+                    class="w-40"
+                    alt="Logo"
+                  />
+                </a>
+
+                <button
+                  class="block navbar-toggler focus:outline-none md:hidden"
+                  type="button"
+                  data-toggle="collapse"
+                  data-target="#navbarOne"
+                  aria-controls="navbarOne"
+                  aria-expanded="false"
+                  aria-label="Toggle navigation"
+                >
+                </button>
+                <div
+                  class="absolute left-0 z-30 hidden w-full px-5 py-3 duration-300 bg-white shadow md:opacity-100 md:w-auto collapse navbar-collapse md:block top-100 mt-full md:static md:bg-transparent md:shadow-none"
+                  id="navbarOne"
+                >
+                  <ul
+                    class="items-center content-start mr-auto lg:justify-center md:justify-end navbar-nav md:flex"
+                  >
+                    <li class="nav-item active">
+                      <a class="page-scroll" href="{% url 'home'%}">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="page-scroll" href="#service">Servicios</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="page-scroll" href="{% url 'blog'%}">Blog</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="page-scroll" href="#contact">Contacto</a>
+                    </li>
+                  </ul>
+                </div>
+
+                <div
+                  class="items-center justify-end hidden navbar-social lg:flex"
+                >
+                  <span class="mr-4 font-bold text-gray-900 uppercase"
+                    >Síguenos</span
+                  >
+                  <ul class="flex footer-social">
+                    <!-- <li>
+                      <a href="#"><i class="lni-twitter-original"></i></a>
+                    </li>
+                    <li>
+                      <a href="#"><i class="lni-instagram-original"></i></a>
+                    </li> -->
+                    <li>
+                      <a href="https://www.linkedin.com/company/85639758/"><i class="lni-linkedin-original"></i></a>
+                    </li>
+                  </ul>
+                </div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        id="home"
+        class="relative z-10 header-hero"
+      >
+        <div class="container">
+          <div class="justify-center row">
+            <div class="w-full lg:w-5/6 xl:w-2/3">
+              <div class="pt-48 pb-64 text-center header-content">
+                <h3
+                  class="mb-5 text-3xl font-semibold leading-tight text-gray-900 md:text-5xl"
+                >
+                Transforma tu pequeño negocio en una gran historia de éxito con BlockChain 
+                </h3>
+                <p class="px-5 mb-10 text-xl text-gray-700">
+                  Transparencia, privacidad, control y sin intermediarios
+                </p>
+                <ul class="flex flex-wrap justify-center">
+                  <li>
+                    <a
+                      class="mx-3 main-btn gradient-btn"
+                      href="javascript:void(0)"
+                      >Contáctanos</a
+                    >
+                  </li>
+                </ul>
+              </div>
+              <!-- header content -->
+            </div>
+          </div>
+          <!-- row -->
+        </div>
+        <!-- container -->
+        <div class="absolute bottom-0 z-20 w-full h-auto -mb-1 header-shape">
+          <img src="{% static '/images/header-shape.svg'%}" alt="shape" />
+        </div>
+      </div>
+      <!-- header content -->
+    </header>
+
+    <section id="service" class="relative services-area py-120">
+      <div class="container">
+        <div class="flex">
+          <div class="w-full mx-4 lg:w-1/2">
+            <div class="pb-10 section-title">
+              <h4 class="title">Te ayudamos a conseguir:</h4>
+            </div>
+            <!-- section title -->
+          </div>
+        </div>
+        <!-- row -->
+        <div class="flex">
+          <div class="w-full lg:w-2/3">
+            <div class="row">
+              <div class="w-full md:w-1/2">
+                <div class="block mx-4 services-content sm:flex">
+                  <div class="services-icon">
+                    <i class="lni-bolt"></i>
+                  </div>
+                  <div class="mb-8 ml-0 services-content media-body sm:ml-3">
+                    <h4 class="services-title">Procesos más rápidos</h4>
+                    <p class="text">
+                      Desarrollamos e implementamoms los smart contracts que necesitas para automatizar los procesos de tu empresa.
+                    </p>
+                  </div>
+                </div>
+                <!-- services content -->
+              </div>
+              <div class="w-full md:w-1/2">
+                <div class="block mx-4 services-content sm:flex">
+                  <div class="services-icon">
+                    <i class="lni lni-money-protection"></i>
+                  </div>
+                  <div class="mb-8 ml-0 services-content media-body sm:ml-3">
+                    <h4 class="services-title">0 fraudes</h4>
+                    <p class="text">
+                      En la blockchain, se puede crear un registro inmutable de cada transacción. Esto significa que cualquier intento de alterar la información de la transacción sería inmediatamente detectado y rechazado.
+                    </p>
+                  </div>
+                </div>
+                <!-- services content -->
+              </div>
+              <div class="w-full md:w-1/2">
+                <div class="block mx-4 services-content sm:flex">
+                  <div class="services-icon">
+                    <i class="lni-wechat"></i>
+                  </div>
+                  <div class="mb-8 ml-0 services-content media-body sm:ml-3">
+                    <h4 class="services-title">Comunicación y transparencia</h4>
+                    <p class="text">
+                      Implementar una red privada blockchain para registrar y compartir información relevante, permite que todos los departamentos tengan acceso a la misma información actualizada en tiempo real.
+                    </p>
+                  </div>
+                </div>
+                <!-- services content -->
+              </div>
+              <div class="w-full md:w-1/2">
+                <div class="block mx-4 services-content sm:flex">
+                  <div class="services-icon">
+                    <i class="lni lni-map"></i>
+                  </div>
+                  <div class="mb-8 ml-0 services-content media-body sm:ml-3">
+                    <h4 class="services-title">Trazabilidad</h4>
+                    <p class="text">
+                      Cada transacción está enlazada con la transacción anterior, creando una cadena inmutable de bloques de información. Esto permite una mayor trazabilidad de los productos y servicios, lo que facilita el seguimiento del movimiento de los mismos.
+                    </p>
+                  </div>
+                </div>
+                <!-- services content -->
+              </div>
+              <div class="w-full md:w-1/2">
+                <div class="block mx-4 services-content sm:flex">
+                  <div class="services-icon">
+                    <i class="lni lni-check-box"></i>
+                  </div>
+                  <div class="mb-8 ml-0 services-content media-body sm:ml-3">
+                    <h4 class="services-title">Control de calidad</h4>
+                    <p class="text">
+                      Cada transacción puede ser verificada por múltiples partes, lo que mejora la calidad y la seguridad de los productos y servicios.
+                    </p>
+                  </div>
+                </div>
+                <!-- services content -->
+              </div>
+              <div class="w-full md:w-1/2">
+                <div class="block mx-4 services-content sm:flex">
+                  <div class="services-icon">
+                    <i class="lni lni-certificate"></i>
+                  </div>
+                  <div class="mb-8 ml-0 services-content media-body sm:ml-3">
+                    <h4 class="services-title">Autenticidad</h4>
+                    <p class="text">
+                      Al registrar cada transacción en la blockchain, se crea un historial completo de cada producto o servicio, lo que permite verificar su autenticidad.
+                    </p>
+                  </div>
+                </div>
+                <!-- services content -->
+              </div>
+            </div>
+            <!-- row -->
+          </div>
+          <!-- row -->
+        </div>
+        <!-- row -->
+      </div>
+      <!-- container -->
+      <div class="services-image">
+        <div class="image">
+          <img src="{% static '/images/services.png'%}" alt="Services" />
+        </div>
+      </div>
+      <!-- services image -->
+    </section>
+
+    
+
+    <section
+      id="call-to-action"
+      class="relative overflow-hidden bg-blue-600 call-to-action"
+    >
+      <div class="absolute top-0 left-0 w-1/2 h-full call-action-image">
+        <img src="{% static '/images/call-to-action.png' %}" alt="call-to-action" />
+      </div>
+
+      <div class="container-fluid">
+        <div class="justify-end row">
+          <div class="w-full lg:w-1/2">
+            <div class="py-32 mx-auto text-center call-action-content">
+              <h2 class="mb-5 text-5xl font-semibold leading-tight text-white">
+                ¿Buscas una forma segura y escalable de almacenar tus datos?
+              </h2>
+              <p class="mb-6 text-white">
+                Almacenamiento descentralizado, mayor seguridad y ahorro de costos: 
+                ¡IPFS tiene todo lo que tu pyme necesita!
+              </p>
+              <div class="ml-embedded" data-form="amfugq"></div>
+            </div>
+            <!-- slider-content -->
+          </div>
+        </div>
+        <!-- row -->
+      </div>
+      <!-- container -->
+    </section>
+
+    <!--====== CALL TO ACTION PART ENDS ======-->
+
+    <!--====== CONTACT PART START ======-->
+
+    <section id="contact" class="contact-area py-120">
+      <div class="container">
+        <div class="justify-center row">
+          <div class="w-full mx-4 lg:w-1/2">
+            <div class="pb-10 text-center section-title">
+              <h4 class="title">Contáctanos</h4>
+            </div>
+            <!-- section title -->
+          </div>
+        </div>
+        <!-- row -->
+        <div class="justify-center row">
+          <div class="w-full lg:w-2/3">
+            <div class="contact-form">
+              <form
+                id="contact-form"
+                action="/blog/templates/static/contact.php"
+                method="post"
+                data-toggle="validator"
+              >
+                <div class="row">
+                  <div class="w-full md:w-1/2">
+                    <div class="mx-4 mb-6 single-form form-group">
+                      <input
+                        type="text"
+                        name="name"
+                        placeholder="Escribe tu nombre"
+                        data-error="Name is required."
+                        required="required"
+                      />
+                      <div class="help-block with-errors"></div>
+                    </div>
+                    <!-- single form -->
+                  </div>
+                  <div class="w-full md:w-1/2">
+                    <div class="mx-4 mb-6 single-form form-group">
+                      <input
+                        type="email"
+                        name="email"
+                        placeholder="Escribe tu email"
+                        data-error="Valid email is required."
+                        required="required"
+                      />
+                      <div class="help-block with-errors"></div>
+                    </div>
+                    <!-- single form -->
+                  </div>
+                  <div class="w-full md:w-1/2">
+                    <div class="mx-4 mb-6 single-form form-group">
+                      <input
+                        type="text"
+                        name="subject"
+                        placeholder="Asunto"
+                        data-error="Subject is required."
+                        required="required"
+                      />
+                      <div class="help-block with-errors"></div>
+                    </div>
+                    <!-- single form -->
+                  </div>
+                  <div class="w-full md:w-1/2">
+                    <div class="mx-4 mb-6 single-form form-group">
+                      <input
+                        type="text"
+                        name="phone"
+                        placeholder="Escribe tu número de móvil"
+                        data-error="Phone is required."
+                        required="required"
+                      />
+                      <div class="help-block with-errors"></div>
+                    </div>
+                    <!-- single form -->
+                  </div>
+                  <div class="w-full">
+                    <div class="mx-4 mb-6 single-form form-group">
+                      <textarea
+                        rows="5"
+                        placeholder="Escribe tu mensaje"
+                        name="message"
+                        data-error="Please, leave us a message."
+                        required="required"
+                      ></textarea>
+                      <div class="help-block with-errors"></div>
+                    </div>
+                    <!-- single form -->
+                  </div>
+                  <p class="mx-4 form-message"></p>
+                  <div class="w-full">
+                    <div class="mx-4 mt-2 text-center single-form form-group">
+                      <button
+                        type="submit"
+                        class="main-btn gradient-btn focus:outline-none"
+                      >
+                        Enviar mensaje
+                      </button>
+                    </div>
+                    <!-- single form -->
+                  </div>
+                </div>
+                <!-- row -->
+              </form>
+            </div>
+            <!-- row -->
+          </div>
+        </div>
+        <!-- row -->
+      </div>
+      <!-- container -->
+    </section>
+
+    <!--====== CONTACT PART ENDS ======-->
+
+    <!--====== FOOTER PART START ======-->
+
+    <footer id="footer" class="bg-gray-100 footer-area">
+      <div class="mb-16 footer-widget">
+        <div class="container">
+          <div class="row">
+            <div class="w-full">
+              <div
+                class="items-end justify-between block mb-8 footer-logo-support md:flex"
+              >
+                <div class="flex items-end footer-logo">
+                  <a class="mt-8" href="{% url 'home' %}  index.html"
+                    ><img width="150" src="{% static '/images/Grouzy_logo.png' %}" alt="Logo"
+                  /></a>
+
+                  <ul class="flex mt-8 ml-8 footer-social">
+                    <li>
+                      <a href="https://www.linkedin.com/company/85639758/"
+                        ><i class="lni-linkedin-original"></i
+                      ></a>
+                    </li>
+                  </ul>
+                </div>
+                <!-- footer logo -->
+              </div>
+              <!-- footer logo support -->
+            </div>
+          </div>
+          <!-- row -->
+          <div class="row">
+            <div class="w-full sm:w-1/2 md:w-1/4 lg:w-1/6">
+              <div class="mb-8 footer-link">
+                <h6 class="footer-title">Empresa</h6>
+                <ul>
+                  <li><a href="javascript:void(0)">Sobre Grouzy</a></li>
+                  <li><a href="javascript:void(0)">Contacto</a></li>
+                  <li><a href="javascript:void(0)">Vacantes</a></li>
+                </ul>
+              </div>
+              <!-- footer link -->
+            </div>
+            <div class="w-full sm:w-1/2 md:w-1/3 lg:w-1/4">
+              <div class="mb-8 footer-link">
+                <h6 class="footer-title">Servicios</h6>
+                <ul>
+                  <li><a href="javascript:void(0)">IPFS</a></li>
+                  <li><a href="javascript:void(0)">Pymes needs Blockchain (PNB)</a></li>
+                  <li><a href="javascript:void(0)">Smart contracts</a></li>
+                </ul>
+              </div>
+              <!-- footer link -->
+            </div>
+            <div class="w-full sm:w-7/12 md:w-1/2 lg:w-1/3">
+              <div class="mb-8 footer-newsletter">
+                <h6 class="text-center footer-title">Únete a nuestra comunidad</h6>
+                <p class="text">Te enviaremos nuestros artículos sobre blockchain</p>
+                <div class="newsletter">
+                  <div class="ml-embedded" data-form="x6ufV2"></div>
+                </div>
+              </div>
+              <!-- footer newsletter -->
+            </div>
+          </div>
+          <!-- row -->
+        </div>
+        <!-- container -->
+      </div>
+      
+    </footer>
+    <a class="back-to-top" href="#"><i class="lni-chevron-up"></i></a>
+    <script src="{% static '/js/modernizr-3.6.0-min.js' %}"></script>
+    <script src="{% static '/js/jquery-1.12.4.min.js' %}"></script>
+    <script src="{% static '/js/ajax-contact.js' %}"></script>
+    <script src="{% static '/js/jquery.easing.min.js' %}"></script>
+    <script src="{% static '/js/scrolling-nav.js' %}"></script>
+    <script src="{% static '/js/validator.min.js' %}"></script>
+
+    <!--====== Magnific Popup js ======-->
+    <script src="{% static '/js/magnific-popup.min.js' %}"></script>
+
+    <!--====== Slick js ======-->
+    <script src="{% static '/js/slick.min.js' %}"></script>
+
+    <!--====== Main js ======-->
+    <script src="{% static '/js/main.js' %}"></script>
+  </body>
+</html>

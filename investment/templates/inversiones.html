@@ -1,0 +1,12 @@
+{% extends blog/base.html %}
+<div>
+    <h1 class="pb-64 text-center title">Our posts</h1>
+</div>
+
+{% for inversion in inversiones %}
+<div class="text-center pb-64">
+    <p>Cantidad invertida: {{ inversion.cantidad_invertida }}</p>
+    <p>Direccion de la billetera: {{ inversion.direccion_billetera }}</p>
+    <p>Participacion: {{ inversion.participacion }}%</p>
+</div>
+{% endfor %}

@@ -1,0 +1,20 @@
+{% extends 'base.html' %}
+<div>
+  <h1 class="pb-64 text-center title">Our posts</h1>
+</div>
+
+{% block content %}
+<div class="text-center pb-64">
+  <h2>Login</h2>
+  <form method="post">
+    {% csrf_token %}
+    <label for="username">Username:</label>
+    <input type="text" name="username" required>
+    <br>
+    <label for="password">Password:</label>
+    <input type="password" name="password" required>
+    <br>
+    <button type="submit">Login</button>
+  </form>
+</div>
+{% endblock %}

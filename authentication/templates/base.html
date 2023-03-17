@@ -1,0 +1,93 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+    <script src="{% static '/js/mailerLite.js' %}"></script>
+    <link rel="stylesheet" href="{% static '/css/slick.css' %}" />
+    <link rel="stylesheet" href="{% static '/css/LineIcons.css' %}" />
+    <link rel="stylesheet" href="{% static '/css/magnific-popup.css' %}" />
+    <link rel="stylesheet" href="{% static '/css/tailwind.css' %}" />
+
+    <title>Grouzy Blog</title>
+</head>
+</head>
+<body>
+    <header class="header-area">
+        <div class="navigation">
+          <div class="container">
+            <div class="row">
+              <div class="w-full">
+                <nav class="flex items-center justify-between">
+                  <a class="mr-4 navbar-brand" href="index.html">
+                    <img src="{% static '/images/Grouzy_logo.png' %}" class="w-40 img" alt="Logo" />
+                  </a>
+    
+                  <button class="block navbar-toggler focus:outline-none md:hidden" type="button" data-toggle="collapse"
+                    data-target="#navbarOne" aria-controls="navbarOne" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="toggler-icon"></span>
+                    <span class="toggler-icon"></span>
+                    <span class="toggler-icon"></span>
+                  </button>
+                  <div
+                    class="absolute left-0 z-30 hidden w-full px-5 py-3 duration-300 bg-white shadow md:opacity-100 md:w-auto collapse navbar-collapse md:block top-100 mt-full md:static md:bg-transparent md:shadow-none"
+                    id="navbarOne">
+                    <ul class="items-center content-start mr-auto lg:justify-center md:justify-end navbar-nav md:flex">
+                      <li class="nav-item active">
+                        <a class="page-scroll" href="{% url 'home' %}">Inicio</a>
+                      </li>
+                    </ul>
+                  </div>
+    
+                  <div class="items-center justify-end hidden navbar-social lg:flex">
+                    <span class="mr-4 font-bold text-gray-900 uppercase">Síguenos</span>
+                    <ul class="flex footer-social">
+                      <!-- <li>
+                        <a href="#"><i class="lni-twitter-original"></i></a>
+                      </li>
+                      <li>
+                        <a href="#"><i class="lni-instagram-original"></i></a>
+                      </li> -->
+                      <li>
+                        <a href="https://www.linkedin.com/company/85639758/"><i class="lni-linkedin-original"></i></a>
+                      </li>
+                    </ul>
+                  </div>
+                </nav>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div id="home" class="pb-64 relative z-10 header-hero">
+          <div class="container">
+            <div class="justify-center row">
+              <div class="w-full lg:w-5/6 xl:w-2/3">
+                <div class="pt-48 text-center">
+                  <h3 class="mb-5 text-3xl font-semibold leading-tight text-gray-900 md:text-5xl">
+                    Queremos ayudarte a comprender todo este complejo mundo de la
+                    BlockChain
+                  </h3>
+                  <p class="text">
+                    De forma sencilla y con pasteles si hace falta, eso sí
+                  </p>
+                </div>
+              </div>
+            </div>.
+          </div>
+          <div class="absolute bottom-0 z-20 w-full h-auto -mb-1 header-shape">
+            <img src="{% static '/images/header-shape.svg'%}" alt="shape" />
+          </div>
+        </div>
+      </header>
+    <section class="">
+        <div class="container">
+            {% block content %}
+            {% endblock %}
+        </div>
+    </section>
+</body>
+</html>
