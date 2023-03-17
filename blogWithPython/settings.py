@@ -132,5 +132,5 @@ STATIC_URL = 'static/'
 
 STATICFILES_DIRS = [
     BASE_DIR / "static/",
-    "/var/wwww/static",
+    "/var/wwww/grouzy.com/html/static",
 ]
